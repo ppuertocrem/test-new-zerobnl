@@ -10,6 +10,9 @@ RUN apk add --no-cache python3 && \
     apk add --no-cache py-zmq && \
 	rm -r /root/.cache
 
+# Jupyter
+RUN pip install ipython jupyter==1.0.0
+
 # ZerOBNL ---------
 
 ADD . /app
